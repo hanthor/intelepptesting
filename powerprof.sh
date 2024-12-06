@@ -1,6 +1,6 @@
 #!/bin/bash
 
-watch -n 5 -c \
+watch -t -n 5 -c \
 'echo -e "\e[32m$(date "+%Y-%m-%d %H:%M:%S")\e[0m: "
  active_profile=$(tuned-adm active)
 if [[ "$active_profile" == *"intel"* ]]
