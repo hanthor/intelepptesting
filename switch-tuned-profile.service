@@ -1,9 +1,0 @@
-[Unit]
-Description=Switch tuned profile based on power source
-
-[Service]
-Type=oneshot
-ExecStart=$HOME/.local/bin/switch_tuned_profile.sh
-
-[Install]
-WantedBy=default.target
