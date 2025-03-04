@@ -1,5 +1,24 @@
-# Testing and scripts to automatically use Intels EPP TuneD profiles
+# Script to Download and Setup Intel's TuneD EPP Powersave and Performance Profiles for the Meteor Lake, Lunar Lake, etc.
 
-https://www.intel.com/content/www/us/en/developer/articles/tool/epp-tuning-package-linux.html
+The newer Intel CPUs have some good power saving but some of this saving hasn't been realised on Linux yet. This download the TuneD profiles from intel.com and sets the Intel profiles as default balanced, performance and battery profiles using Tuned-ppd.
 
-script sets profile to Intel's performance profile on AC or Intel's powerseave on Battery
+# Installation
+
+- *setup_intel_profiles.sh* - Downloads and configure the Intel EPP profiles
+
+# Other Scripts
+
+- *powerprof.sh* - watches the current charge state and tuned profile, so you can monitor the power profile switching
+- *cpuenergyinfo.sh* - outputs the current EPP setting on all the cpu cores
+
+
+# What these Intel EPP profiles do
+
+## intel-best_power_efficiency_mode
+
+sets `energy_performance_preference` to 178
+sets `energy_perf_bias` to 8
+
+## intel-best_performance_mode
+
+sets `energy_performance_preference` to 64
