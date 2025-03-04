@@ -4,7 +4,7 @@ The newer Intel CPUs have some good power saving but some of this saving hasn't 
 
 # Installation
 
-- *setup_intel_profiles.sh* - Downloads and configure the Intel EPP profiles
+- *setup_intel_profiles.sh* - Downloads and configure the Intel EPP profiles as default in `ppd.conf`
 
 # Other Scripts
 
